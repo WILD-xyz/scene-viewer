@@ -19,6 +19,7 @@ import {
   WebGLRenderer,
   sRGBEncoding,
 } from 'three';
+import { FlyControls } from 'three/examples/jsm/controls/FlyControls';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { KTX2Loader } from 'three/examples/jsm/loaders/KTX2Loader.js';
