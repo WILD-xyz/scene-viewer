@@ -125,6 +125,12 @@ export class Viewer {
     this.controls.autoRotateSpeed = -10;
     this.controls.screenSpacePanning = true;
 
+    controls = new FlyControls( camera, renderer.domElement );
+    controls.movementSpeed = 50;
+    controls.rollSpeed = Math.PI / 24;
+    controls.autoForward = false;
+    controls.dragToLook = true;
+
     this.vignette = createBackground({
       aspect: this.defaultCamera.aspect,
       grainScale: IS_IOS ? 0 : 0.001, // mattdesl/three-vignette-background#1
